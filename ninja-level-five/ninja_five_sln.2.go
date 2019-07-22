@@ -10,7 +10,7 @@ type person struct {
 }
 
 func main() {
-	var ppl = []person{
+	ppl := []person{
 		{
 			first:           "joey",
 			last:            "chesnut",
