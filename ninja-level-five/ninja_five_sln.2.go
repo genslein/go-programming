@@ -23,7 +23,7 @@ func main() {
 		},
 	}
 
-	var m = map[string]person{
+	m := map[string]person{
 		ppl[0].last: ppl[0],
 		ppl[1].last: ppl[1],
 	}
