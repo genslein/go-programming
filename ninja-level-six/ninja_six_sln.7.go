@@ -21,6 +21,14 @@ func (c circle) area() float64 {
 	return (math.Pi * math.Pow(c.radius, 2))
 }
 
+type shape interface {
+	area() float64
+}
+
+func info(s shape) {
+	fmt.Println("my area is:", s.area())
+}
+
 func main() {
 	x := square{
 		length: 6.0,
@@ -37,8 +45,8 @@ func main() {
 		return w * l
 	}
 
-	fmt.Println(x.area())
-	fmt.Println(y.area())
+	info(x)
+	info(y)
 	fmt.Println("Area of a rectangle:", rectangle(5, 7))
 	return
 }
