@@ -47,4 +47,5 @@ func main() {
 	}
 	saySomething(&p)
 	// saySomething(p)
+	wg.Wait()
 }
