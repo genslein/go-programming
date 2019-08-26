@@ -14,5 +14,6 @@ func UseCount(s string) map[string]int {
 }
 
 func Count(s string) int {
+	return len(s)
 	// write the code for this func
 }
